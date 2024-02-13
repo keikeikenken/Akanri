@@ -1,0 +1,409 @@
+/*------------------------------*/
+/* base
+/*------------------------------*/
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: white;
+} */
+
+html{
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav{
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+}
+
+.nav-text {
+    color: #707070;
+    font-family: 'Candara', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    list-style: none;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+
+/*------------------------------*/
+/* bg
+/*------------------------------*/
+
+.bg {
+    background-color: #383636;
+    background:#383636 ;
+    /* height: 1000px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+/*------------------------------*/
+/* login
+/*------------------------------*/
+
+
+.login-text {
+    text-align: center;
+    margin-left: auto;
+    padding-bottom: 30px;
+}
+
+.login-button{
+    margin-left: auto;
+}
+
+.login-box , .home-login-box, .signup-box{
+    background-color: gainsboro;
+    border-radius: 10px;
+    /*margin-top: 50px;*/
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    padding: 10px;
+}
+
+.login-for-signup {
+    padding-top: 5px;
+}
+
+/*------------------------------*/
+/* home
+/*------------------------------*/
+
+.header{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px; /* パディングを調整 */
+    background-color: white;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.header-info {
+    width: 32%;
+}
+
+.clock-wrapper {
+    margin-left: 460px;
+    position: absolute;
+
+} 
+
+.clock-date {
+    color: #635C5C;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.4;
+    /* margin-left: 5%; */
+}
+
+.clock-time {
+    color: #635C5C;
+    font-size: 55px;
+    font-weight: bold;
+    margin-left: 10%;
+} 
+
+.username, .apply-char, .fix-char {
+    font-size: 45px; 
+    font-weight: bold;
+    color: #F1E9E9;
+    text-align: center;
+  }
+/*-----------button--------------*/
+
+.button-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-button{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.apply-box{
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.attend_button, .accept_button{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	padding: 20px 30px;
+	font-size: 30px;
+	background: #56B86A;
+	color: #fff;
+	border-radius: 10px;
+	position: relative;
+	transition: 0.5s;
+    font-weight: bold;
+}
+
+
+button.attend_button::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+}
+
+button.attend_button:hover {
+	background: #7fd791;
+	color: #fff;
+}
+
+.go_home_button, .reject_button{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	padding: 20px 30px;
+	font-size: 30px;
+	background: #AF4456;
+	color: #fff;
+	border-radius: 10px;
+	position: relative;
+	transition: 0.5s;
+    font-weight: bold;
+}
+
+button.go_home_button::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+}
+
+button.go_home_button:hover {
+	background: #da808f;
+	color: #fff;
+}
+
+.alert-box{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.home-login{
+    text-align: center;
+}
+
+/*---------------attendance-table-----------------*/
+
+
+.attendance-note {
+    font-size: 45px; 
+    font-weight: bold;
+    color: #F1E9E9;
+    text-align: center;
+}
+
+.table-design{
+    background: gainsboro;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    border: solid 2px #383636;/*表全体を線で囲う*/
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+table th, .table-char{
+    font-size: 20px;
+    color: #383636;
+    border: solid 1px black;
+    text-align: center;
+}
+
+table td, .table-data-char{
+    padding: 10px;
+    font-size: 15px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+
+/*attendance_serch*/
+
+.form-group{
+    background: gainsboro;
+    align-items: center;
+    margin: auto;
+    width: 550px;
+    border-radius: 20px;
+
+}
+
+.box{
+    background: gainsboro;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 550px;
+    border-radius: 20px;
+
+}
+
+.box-text{
+    font-size: 20px;
+    color: #383636;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+/*--------------apply_fix------------*/
+
+.fix-box{
+    background-color: gainsboro;
+    border-radius: 10px;
+    /*margin-top: 50px;*/
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.apply_button{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+	text-align: center;
+	text-decoration: none;
+	margin: auto;
+	padding: 10px 60px;
+	font-size: 20px;
+	background: #56B86A;
+	color: #fff;
+	border-radius: 10px;
+	position: relative;
+	transition: 0.5s;
+    font-weight: bold;
+}
+
+button.apply_button::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+}
+
+button.apply_button:hover {
+	background: #7fd791;
+	color: #fff;
+}
+
+.fix-label{
+    font-size: 20px;
+    color: #383636;
+    text-align: center;
+    font-weight: 600;
+}
+
+.fix-form{
+    width: 250px;
+    border-radius: 8px;
+    border-color: gainsboro;
+}
+
+hr {
+    width: 70%;
+    height: 3px;
+    background-color: white;
+}
+/*---------apply-list----------*/
+
+.apply-list {
+    width: 75%;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.table-accept-char{
+    color:  #56B86A;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.table-reject-char{
+    color:  #AF4456;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/*----------------accept-detail------------------*/
+
+.accept-box{
+    width: 50%;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.accept-char{
+    font-size: 20px;
+    color: #383636;
+    text-align: center;
+    font-weight: 700;
+}
+
+.accept-data-char{
+    padding: 10px;
+    font-size: 15px;
+    border: solid 3px black;
+    text-align: center;
+    font-weight: 400;
+}
+
+button.accept_button::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+}
+
+button.accept_button:hover {
+	background: #7fd791;
+	color: #fff;
+}
+
+button.reject_button::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+}
+
+button.reject_button:hover {
+	background: #da808f;
+	color: #fff;
+}
