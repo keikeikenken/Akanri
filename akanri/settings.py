@@ -30,7 +30,7 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = 'django-insecure-jh(cno%=^lhu=aa*u5asxi8(b6inm=37izh^qr2zs%a#fe($nl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
