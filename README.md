@@ -1,1 +1,1 @@
-# Akanri公開ページ(freeeさん課題)
+# Akanri公開ページ
